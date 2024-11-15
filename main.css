@@ -1,0 +1,214 @@
+
+main {
+    display: flex;
+}
+
+input {
+    text-align: right;
+    background-color: rgb(189, 189, 189);
+    width: 370px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+
+
+table {
+    display: inline-block;
+    padding: 20px;
+    background-color:   rgb(26, 26, 26);
+    border-radius: 10px;
+}
+table tr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+    height: 100vh;
+     background-color: rgb(189, 214, 181);
+}
+
+.displaytable {
+    display: table;
+}
+
+.displaytable-cell {
+    display: table-cell;
+}
+  
+.button {
+    width: 60px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.blackbutton { 
+    background-color: rgb(36, 36, 36); 
+    color: white;
+}
+
+.greenbutton {
+    background-color: #04a474;
+    border-radius: 8px;
+}
+
+.greybutton {
+    background-color: gray;
+}
+
+.bluebutton {
+    background-color: rgb(196, 193, 193);
+    border-radius: 10px;
+    
+}
+
+.redbutton {
+    background-color: #00ff22;
+}
+
+*{
+    margin: 10;
+    padding: 0;
+}
+
+.slider input{
+    visibility: hidden;
+    display: none;
+
+}
+
+.buttons{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 50px;
+    gap: 10px;
+}
+
+.buttons label{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 1;
+    transition: 300ms ease-in-out;
+}
+
+.buttons label:hover{
+    scale: 1.1;
+    opacity: 1;
+}
+img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 190px;
+    /* Ajusta el tamaño de la imagen */
+    height: auto;
+    /* Mantiene la relación de aspecto */
+    padding: 20px 20px;
+}
+#calculator-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.transition-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ffffff91;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+/* Efecto al hacer clic en el botón */
+.transition-button:active {
+    background-color: #8e3b00; /* Cambia el color al presionar */
+    transform: scale(0.95); /* Hace que el botón se encoja ligeramente */
+}
+
+/* Efecto al pasar el ratón sobre el botón */
+.transition-button:hover {
+    background-color: #61b87f; /* Cambia el color cuando pasa el ratón */
+    transform: scale(1.0); /* Agranda ligeramente el botón */
+}
+.modal {
+    position: fixed; /* Fijar el modal en la pantalla */
+    z-index: 1; /* Asegurarse de que esté por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* El modal ocupa toda la pantalla */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.432); /* Fondo semitransparente */
+}
+
+/* Estilo del contenido del modal */
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(203, 231, 228);
+    margin: 15% auto; /* Centrado vertical y horizontal */
+    padding: 20px;
+    border: 1px solid #88888800;
+    border-radius: 30px;
+    width: 80%; /* Tamaño del modal */
+    max-width: 500px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+/* El botón para cerrar el modal */
+.close {
+    color: #414141;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.buttons-footer
+{
+    display: flex;
+    gap:20px;
+}
+#closeModalBtn{
+    padding: 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+.page-title{
+    position: sticky;
+    font-size: 30px;
+    font-weight: bold;
+    color: #595a59;
+    margin-bottom: 20px;
+}
+header h1 span {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6em;
+}
